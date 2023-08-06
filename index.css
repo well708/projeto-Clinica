@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@300&display=swap');
+
+/* Estilo Geral */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background-image: url(Imagens/img4.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header{
+   
+}
+
+nav{/* img logo */
+margin-top:20px;
+display:flex;
+justify-content:center;
+}
+
+.dropdown-menu{
+display:flex;
+flex-wrap: wrap;
+top: 15px;
+left: 600px;
+width: 100%;
+position: fixed;
+  gap:20px;
+font-family:Inter;
+}
+.dropdown-menu li{
+width:150px;
+height:50px;
+list-style:none;
+}
+.dropdown-menu a{
+display:block;
+width:100%;
+height:100%;
+color:white;
+text-decoration:none;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:1.3rem;
+}
+.dropdown-menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 10%;
+    height: 3px; 
+    background: #1E90FF;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s; 
+}
+.dropdown-menu a:hover::after{
+    transform-origin: left;
+    transform:scaleX(1);
+ }
+
+.dropdown-menu li:hover > .dropdown-submenu{
+display:block;
+}
+.dropdown-submenu{
+ margin-top:1px;
+ display:none;
+}
+.dropdown-submenu a{
+background-color:#00000080;
+width:150%;
+display:flex;
+justify-content:flex-start;
+padding-left:20px;
+font-size:.8rem;
+border-left:8px solid transparent;
+}
+.dropdown-submenu li:hover > a{
+border-left:8px solid black;
+}
+.h1p{
+text-align:left;
+padding:30px;
+margin-top:0px;
+font-family: Boogaloo;
+font-size: 40px;
+color:black;
+}
+h1{
+text-align:left;
+padding:30px;
+margin-top:0px;
+font-family: Boogaloo;
+font-size: 40px;
+color:black;
+}
+h2{
+text-align:left;
+padding:30px;
+margin-top:40px;
+font-family: Boogaloo;
+font-size: 40px;
+color:black;
+}
+h3{
+text-align:center;
+padding:30px;
+margin-top:0px;
+font-family: Boogaloo;
+font-size: 40px;
+color:white;
+}
+.texto2{
+margin-top:0px;
+padding:50px;
+}
+.img1{
+max-width:50%;
+height:auto;
+}
+.img3{
+position:relative;
+filter: brightness(40%);
+max-width:100%;
+height:auto;
+display:block;
+}
+.text1{
+ width: 100%;
+ height: 500px;
+ padding: 30px;
+ font-family: Boogaloo;
+ font-size:1.3rem;
+}
+.container{
+overflow: hidden;
+}
+.img-left {
+float: right;
+width: 35%;
+margin-right: 100px;
+margin-top:-62px;
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container3{
+  position: relative;
+  width: 100%;
+}
+
+.img3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.texto {
+color:white;
+font-family: Boogaloo;
+font-size:35px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.box {
+  background-color: white;
+  text-align: center;
+  font-family:Inter;
+  padding: 10px;
+  width: calc(30% - 150px);
+  transition: 200ms linear;
+  height: 250px;
+  margin: 15px;
+}
+.box:hover{
+transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: calc(100% - 10px);
+    margin: 5px;
+  }
+}
+.text2{
+ width: 100%;
+ height: 700px;
+ background-color: #eaeaea;
+ padding: 20px;
+}
+.text3{
+ width: 100%;
+ height: 400px;
+ background-image:url(Imagens/castracao-de-caes-e-gatos.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+ padding: 20px;
+ text-align:center;
+}
+
+section .text2{
+ display: flex;
+ padding:90px;
+ background-color:#ece7e7;
+}
+.p1{
+ display: block;
+ margin-block-start: 1em;
+ margin-block-end: 200px;
+ margin-inline-start: 30px;
+ margin-inline-end: 0px;
+ text-align: justify;
+ max-width: 800px;
+ font-family: Inter;
+ font-size:24px;
+}
+.p2{
+ display: block;
+ margin-block-start: 3rem;
+ margin-inline-start: 30px;
+ text-align: justify;
+ max-width: 1000px;
+ font-family: Inter;
+ font-size:24px;
+}
+.p3{
+ display: block;
+ color:white;
+ align-items:center;
+ margin-block-start: 3rem;
+ margin-left:auto;
+margin-right:auto;
+ text-align: justify;
+ max-width: 1500px;
+ font-family: Inter;
+ font-size:24px;
+}
+.caixa1{
+  width: 400px;
+  height: 250px;
+  border-radius: 1%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family:Inter;
+  padding: 10px;
+  position: absolute;
+  top: 205%;
+  left: 46%;
+  transition: 200ms linear; 
+}
+.caixa1:hover{
+ transform: scale(1.1);
+}
+.caixa2{
+  width: 400px;
+  height: 250px;
+  border-radius: 1%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family:Inter;
+  padding: 10px;
+  position: absolute;
+  top: 175%;
+  left: 46%;
+  transition: 200ms linear; 
+}
+.caixa2:hover{
+ transform: scale(1.1);
+}
+.caixa3{
+  width: 400px;
+  height: 250px;
+  border-radius: 1%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family:Inter;
+  padding: 10px;
+  position: absolute;
+  top: 175%;
+  left: 70%;
+  transition: 200ms linear; 
+}
+.caixa3:hover{
+ transform: scale(1.1);
+}
+.caixa4{
+  width: 400px;
+  height: 250px;
+  border-radius: 1%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family:Inter;
+  padding: 10px;
+  position: absolute;
+  top: 205%;
+  left: 70%;
+  transition: 200ms linear; 
+}
+.caixa4:hover{
+ transform: scale(1.1);
+}
+.icons{
+text-align: center;
+  width: 65px;
+  height: 65px;
+}
+.imagem1{
+  display:flex;
+}
+.button2{
+font-family: Boogaloo;
+text-decoration: none;
+padding: 10px 20px;
+background-color: #007bff;
+color: #ffffff;
+display: block;
+margin-block-start: 2.2em;
+margin-block-end: 700px;
+margin-inline-start: 30px;
+margin-inline-end: 0px;
+text-align: justify;
+max-width: 170px;
+font-size:25px;
+}
+.button3{
+font-family: Boogaloo;
+text-decoration: none;
+padding: 10px 20px;
+color: #ffffff;
+border: 2px solid white;
+margin-left:auto;
+margin-right:auto;
+display: block;
+width:15%;
+margin-top:60px;
+text-align: center;
+font-size:25px;
+}
+.user{
+text-align:left;
+padding:30px;
+margin-left:-500px;
+margin-top:-260px;
+font-family: Boogaloo;
+font-size: 40px;
+color:white;
+}
+.logo{
+position:relative;
+margin-left:-1110px;
+margin-top:-950px;
+}
+.flex{
+display:flex;
+}
+.footer {
+height: 60px; 
+background-color: #f5f5f5; 
+text-align:center;
+padding: 20px; 
+}
