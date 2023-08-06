@@ -102,7 +102,7 @@ h1 {
   }
 
   .texto{
-    margin-left: 10px;
+    margin-left: -20px;
     position: absolute;
     left: 0;
     display: flex;
