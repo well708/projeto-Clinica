@@ -149,7 +149,7 @@ header {/* menu */
 @media (max-width: 850px) {
     .logo{
         position: absolute;
-        top: 1px;
+        top: 0;
         width:80%;
       }
       .texto{
