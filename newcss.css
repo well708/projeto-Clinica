@@ -95,16 +95,15 @@ header {/* menu */
     width: 50%;
   }
 
-h1 {    
+.txt-agenda {    
     font-family: Boogaloo;
     font-size: 40px;
     color: white;
   }
 
   .texto{
-    margin-left: -20px;
     position: absolute;
-    left: 0;
+    left:20px;
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -146,34 +145,43 @@ h1 {
     transition: 0.4s;
 }
 
-/* Estilos para o menu list aparecer ou ocultar */
-
-
-/* Media query para telas com largura de 850px ou menor */
+/* estilos do menu dropdown */
 @media (max-width: 850px) {
     .logo{
         position: absolute;
-        left: 0;
-        top: 2px;
-        width: 15rem;
+        top: 1px;
+        width:80%;
+      }
+      .texto{
+        left:0;
       }
     .hamburger-menu {
         display: flex;
-        flex-direction: column;
-        cursor: pointer;
+        color: #ffffff;
+        margin-top: 20px; 
+        cursor: pointer; 
     }
-
-    .menu-list {
-        display: none;
-        padding:.7em ;   
+    .hamburger-menu:hover{
+        color: #1E90FF;
     }
     .menu-list.show {
-        background: #1e8fff66;
-       display:flex; 
+        background: rgba(215, 215, 215, 0.556);
+        display:flex; 
         flex-direction: column;
         align-content: space-between;
         position: absolute;
-        left:-128px; 
+    }
+    .menu-list {
+        display: none;
+        position: absolute;
+        top: 46px;
+        right: 2px;
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 1;
+    }
+    .menu-list li {
+        margin: 4px ;
     }
 }
 
